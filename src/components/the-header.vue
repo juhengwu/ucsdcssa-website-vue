@@ -62,6 +62,9 @@
                     <a href="https://mp.weixin.qq.com/s/nYxpPqBgKjTkYPmhf7qJMg" target="_blank">
                       <el-dropdown-item>新生见面会</el-dropdown-item>
                     </a>
+                    <router-link to="home/application">
+                      <el-dropdown-item>报名页面</el-dropdown-item>
+                    </router-link>
                   </el-dropdown-menu>
                 </template>
               </el-dropdown>

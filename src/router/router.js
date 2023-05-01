@@ -9,6 +9,7 @@ import MobileClasses from "../views/mobile-classes.vue";
 import MobileCardInstructions from "../views/mobile-card-instructions.vue";
 import MobileLoginRegister from "../views/mobile-login-register.vue";
 import MobileResetPassword from "../views/mobile-reset-password.vue";
+import Application from "../views/application.vue";
 
 const routes = [
     {
@@ -27,6 +28,11 @@ const routes = [
                 component: Department,
                 name: "Department",
                 props: true
+            },
+            {
+                path: "home/application",
+                component: Application,
+                name: "Application"
             }
         ]
     },
