@@ -91,10 +91,10 @@
             <!--  </el-col>-->
 
             <!--部门折叠面板-->
-            <el-col :span="4">
+            <el-col :span="6">
               <el-dropdown>
           <span class="el-dropdown-link">
-            部门
+            部门介绍
             <el-icon class="el-icon--right">
               <arrow-down/>
             </el-icon>
