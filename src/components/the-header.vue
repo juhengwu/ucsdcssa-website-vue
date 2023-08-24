@@ -62,6 +62,9 @@
                     <a href="https://mp.weixin.qq.com/s/nYxpPqBgKjTkYPmhf7qJMg" target="_blank">
                       <el-dropdown-item>新生见面会</el-dropdown-item>
                     </a>
+                    <router-link to="home/application">
+                      <el-dropdown-item>报名页面</el-dropdown-item>
+                    </router-link>
                   </el-dropdown-menu>
                 </template>
               </el-dropdown>
@@ -88,10 +91,10 @@
             <!--  </el-col>-->
 
             <!--部门折叠面板-->
-            <el-col :span="4">
+            <el-col :span="6">
               <el-dropdown>
           <span class="el-dropdown-link">
-            部门
+            部门介绍
             <el-icon class="el-icon--right">
               <arrow-down/>
             </el-icon>
