@@ -2,7 +2,7 @@
   <el-container class="common-layout">
     <el-footer>
       <el-row>
-        <el-col :span="12"><div class="iconsss" />
+        <el-col :span="11"> <div class="iconsss" />
           <el-row justify="center" class="follow">Follow US</el-row>
           <el-row justify="center">
             <el-col :span="2" class="icon1">
@@ -78,8 +78,8 @@
                 <el-image :src="getAssetsFile('tiktok.jpg')" class="icon icon-container tiktok" :fit="'contain'"></el-image>
               </a>
             </el-col>
-
           </el-row>
+        
 
 
 
@@ -95,6 +95,7 @@
                 <span class="boldtext">&nbspUCSD CSSA&nbsp</span>
                 All rights reserved.
               </el-row>
+          
               <el-row>
                 <!--网站备案信息-->
                 <el-link href="https://beian.miit.gov.cn/#/Integrated/index" :underline="false">
@@ -106,8 +107,11 @@
 
         </el-col>
 
+        
 
-        <el-col :span="12"><div class="iconsss" />
+
+        <el-col :span="4">   
+        <div class="iconsss" />
 
           <el-row justify="center" class="follow">Contact US</el-row>
           <el-row justify="center" style="color: white">cssa@gmail.com</el-row>
@@ -129,8 +133,422 @@
               <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
             </form>
           </el-row>
+       
         </el-col>
+
+        <!-- 赞助商 -->
+        <el-col :span="9">  <el-row class="follow" justify="center" > Sponsors </el-row>  
+        <el-row justify="center">
+
+        <!-- <el-col :span="2" class="icon-sponsor">
+          <el-image :src="getAssetsFile('panda-express.png')" class="icon sponsor-container tiktok"></el-image>
+        </el-col> -->
+        <el-col :span="2" class="icon-sponsor">
+          <el-popover placement="right" >
+            <template #reference>
+              <el-image :src="getAssetsFile('panda-express.png')" class="icon sponsor-container sponsors"/>
+            </template>
+            <template #default>
+              <div style="display: flex; justify-content: center; align-items: center; ">
+                Panda Express
+              </div>
+            </template>
+          </el-popover>
+        </el-col>
+        
+        
+
+        <el-col :span="2" class="icon-sponsor">
+          <el-popover placement="right" >
+            <template #reference>
+              <el-image :src="getAssetsFile('tapioca-express.png')" class="icon sponsor-container sponsors"/>
+            </template>
+            <template #default>
+              <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                Tapioca Express
+              </div>
+            </template>
+          </el-popover>
+        </el-col>
+        
+        <el-col :span="2" class="icon-sponsor">
+          <el-popover placement="right" >
+            <template #reference>
+              <el-image :src="getAssetsFile('yogurt-world.png')" class="icon sponsor-container sponsors"/>
+            </template>
+            <template #default>
+              <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                Yogurt World
+              </div>
+            </template>
+          </el-popover>
+        </el-col>
+        
+        <el-col :span="2" class="icon-sponsor">
+          <el-popover placement="right" >
+            <template #reference>
+              <el-image :src="getAssetsFile('taco-villa.png')" class="icon sponsor-container sponsors"/>
+            </template>
+            <template #default>
+              <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                Taco Villa
+              </div>
+            </template>
+          </el-popover>
+        </el-col>
+        
+        <el-col :span="2" class="icon-sponsor">
+          <el-popover placement="right">
+            <template #reference>
+              <el-image :src="getAssetsFile('spot-ktv.png')" class="icon sponsor-container sponsors"/>
+            </template>
+            <template #default>
+              <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                Spot KTV
+              </div>
+            </template>
+          </el-popover>
+        </el-col>
+        
+        <el-col :span="2" class="icon-sponsor">
+          <el-popover placement="right" >
+            <template #reference>
+              <el-image :src="getAssetsFile('eastern-dynasty.png')" class="icon sponsor-container sponsors"/>
+            </template>
+            <template #default>
+              <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                Eastern Dynasty
+              </div>
+            </template>
+          </el-popover>
+        </el-col>
+        
+
+       
+        </el-row>
+
+        <!-- second row -->
+      
+
+          <el-row justify="center">
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('blue-pepper.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    Blue Pepper
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+          
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('fan-fan.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    Fan Fan
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+          
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('starbucks.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    Starbucks
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+          
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('youmi.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    Youmie
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+          
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('kanpai.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    KANPAI
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+          
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('o-billiard-cafe.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    O Billiard Cafe
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+    
+          
+
+         
+        </el-row>
+
+          <!-- third row -->
+          <el-row justify="center">
+
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('rakiraki.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    RAKIRAKI
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+            
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('shanghai-cafe.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    Shanghai Cafe
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+            
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('dumpling-inn.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    Dumpling Inn
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+            
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('m-and-j.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    M&J 798
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+            
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('si-chuan-garden.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    Spicy City
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+            
+            <el-col :span="2" class="icon-sponsor">
+              <el-popover placement="right">
+                <template #reference>
+                  <el-image :src="getAssetsFile('bbking.png')" class="icon sponsor-container sponsors"/>
+                </template>
+                <template #default>
+                  <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                    BB KING
+                  </div>
+                </template>
+              </el-popover>
+            </el-col>
+            
+
+
+          
+
+          </el-row>
+
+        <!-- fourth row -->
+        <el-row justify="center">
+       
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('sizzling-pot-king.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  Sizzling Pot King 
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('chakaa.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  Chakaa 
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('du-entertainment.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  DU Entertainment
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('encounter.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  Encounter
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('k.ma.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  K.MA
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('vivi-bubble-tea.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  ViVi Bubble Tea
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+  
+        </el-row>
+
+        <!-- fifth row -->
+        <el-row justify="center">
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('yin-tang.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  Yin Tang
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('wu-hu.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  Wu Hu
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('hai-si.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                 Hair Star 
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        
+          <el-col :span="2" class="icon-sponsor">
+            <el-popover placement="right">
+              <template #reference>
+                <el-image :src="getAssetsFile('nobel-chef.png')" class="icon sponsor-container sponsors"/>
+              </template>
+              <template #default>
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+                  The Nobel Chef
+                </div>
+              </template>
+            </el-popover>
+          </el-col>
+        </el-row>
+        
+
+
+
+      </el-col>
+
+
       </el-row>
+
+     
+  
 
     </el-footer>
   </el-container>
@@ -209,6 +627,9 @@ export default {
   .instagram:hover {
     background: linear-gradient(45deg, yellow 0%, #f09433 20%, #e6683c 40%, #dc2743 60%, #cc2366 80%, #bc1888 100%);
   }
+  .sponsors:hover {
+    background: #000000 !important;
+  }
 
   .icon-container {
     margin-top: 1vw;
@@ -221,6 +642,17 @@ export default {
     padding: 0.7vw;
     transition: transform 0.3s;
   }
+  .sponsor-container {
+    margin-top: 1vw;
+    background: #ffffff0e;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 45%;
+    line-height: 6vw;
+    vertical-align: middle;
+    padding: 0.1vw;
+    transition: transform 0.3s;
+  }
 
   .icon1{
     margin-left: 0.5vw;
@@ -229,6 +661,10 @@ export default {
   .icon2{
     margin-left: 0.5vw;
     margin-top: -1.2vw;
+  }
+  .icon-sponsor{
+    margin-left: 0.4vw;
+    margin-bottom: -0.5vw;
   }
 
   .logo {
