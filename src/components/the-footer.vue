@@ -336,7 +336,7 @@
                 </template>
                 <template #default>
                   <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
-                    Shanghai Cafe
+                     Shanghai Cafe
                   </div>
                 </template>
               </el-popover>
