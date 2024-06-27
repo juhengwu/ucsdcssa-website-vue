@@ -2,7 +2,7 @@
   <el-container class="common-layout">
     <el-footer>
       <el-row>
-        <el-col :span="11"> <div class="iconsss" />
+        <el-col :span="10"> <div class="iconsss" />
           <el-row justify="center" class="follow">Follow US</el-row>
           <el-row justify="center">
             <el-col :span="2" class="icon1">
@@ -53,7 +53,7 @@
 
           <!-- new row of contact -->
           <!--Youtube image and link-->
-          <el-row justify="center">
+          <el-row :style="{ paddingBottom: '3%' }" justify="center">
             <el-col :span="2" class="icon2">
               <a href="https://www.youtube.com/@ucsdcssa9192">
                 <el-image :src="getAssetsFile('youtube.jpg')" class="icon icon-container youtube"></el-image>
@@ -96,7 +96,7 @@
                 All rights reserved.
               </el-row>
           
-              <el-row>
+              <el-row class="texta">
                 <!--网站备案信息-->
                 <el-link href="https://beian.miit.gov.cn/#/Integrated/index" :underline="false">
                   苏ICP备2022038753号-1
@@ -110,9 +110,8 @@
         
 
 
-        <el-col :span="4">   
-        <div class="iconsss" />
-
+        <el-col :span="5">   
+        <div class="iconsss" />  
           <el-row justify="center" class="follow">Contact US</el-row>
           <el-row justify="center" style="color: white">cssa@gmail.com</el-row>
           <el-row justify="center">
@@ -588,7 +587,7 @@ export default {
   }
 
   .copy{
-    margin-left: 15vw;
+    margin-left: 12vw;
   }
 
   .icon {
@@ -656,10 +655,12 @@ export default {
 
   .icon1{
     margin-left: 0.5vw;
+    margin-right: 0.5vw;
   }
 
   .icon2{
     margin-left: 0.5vw;
+    margin-right: 0.5vw;
     margin-top: -1.2vw;
   }
   .icon-sponsor{
@@ -674,6 +675,7 @@ export default {
 
   .texta {
     color: lightgrey;
+    margin-left: 3%;
   }
 
   .input{
