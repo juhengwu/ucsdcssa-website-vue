@@ -115,19 +115,19 @@
           <el-row justify="center" class="follow">Contact US</el-row>
           <el-row justify="center" style="color: white">cssa@gmail.com</el-row>
           <el-row justify="center">
-            <form target="_blank" action="https://formsubmit.co/jic034@ucsd.edu" method="POST">
-              <div class="form-group">
-                <div class="form-row">
+            <form target="_blank" action="https://formsubmit.co/jic034@ucsd.edu" method="POST" >
+              <div class="form-group" >
+                <div class="form-row" >
                   <div class="col">
-                    <input type="text" name="name" class="form-control" placeholder="Your Full Name" required>
+                    <input type="text" name="name" class="form-control rounded-input" placeholder="Your Full Name" required>
                   </div>
                   <div class="col">
-                    <input type="email" name="email" class="form-control" placeholder="Your Email Address" required>
+                    <input type="email" name="email" class="form-control rounded-input" placeholder="Your Email Address" required>
                   </div>
                 </div>
               </div>
               <div class="form-group">
-                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                <textarea placeholder="Your Message" class="form-control rounded-input" name="message" rows="10" required></textarea>
               </div>
               <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
             </form>
@@ -682,5 +682,12 @@ export default {
     width: 10vw;
 
   }
+
+  .rounded-input {
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  
 
 </style>
