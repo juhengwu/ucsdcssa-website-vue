@@ -28,26 +28,9 @@
 
               <!-- weibo image and link -->
             <el-col :span="2" class="icon1">
-              <el-popover placement="right"
-                  :width="300"
-                  popper-style="box-shadow: rgb(14 18 22 / 35%) 0px 10px 38px -10px, rgb(14 18 22 / 20%) 0px 10px 20px -15px; padding: 20px;"
-              >
-                <template #reference>
-                  <el-image :src="getAssetsFile('weibo.png')" class="icon icon-container gmail"/>
-                </template>
-                <template #default>
-                  <div
-                      class="demo-rich-conent"
-                      style="display: flex; gap: 16px; flex-direction: column"
-                  >
-
-                    <p class="cssaemail" style="margin: 0">
-
-                      https://weibo.com/u/5674329114
-                    </p>
-                  </div>
-                </template>
-              </el-popover>
+                  <a href="https://weibo.com/u/56743291145/">
+                        <el-image :src="getAssetsFile('weibo.png')" class="icon icon-container gmail"/>
+                  </a>  
             </el-col>
           </el-row>
 
@@ -60,10 +43,12 @@
               </a>
             </el-col>
 
-            <!--Wechat image-->
+            <!--Red image-->
             <el-col :span="2" class="icon2">
+              <a href="https://www.xiaohongshu.com/user/profile/61b981e1000000001000eaf9?xhsshare=CopyLink&appuid=6534a913000000000301c76c&apptime=1719550286">
               <!--这里要打开的图片需要放到public文件夹下。-->
                 <el-image :src="getAssetsFile('red.jpg')" class="icon icon-container red" :fit="'contain'"></el-image>
+              </a>
             </el-col>
 
             <!--Bilibili image and link-->
@@ -74,7 +59,7 @@
             </el-col>
             <!--Tiktok image and link -->
             <el-col :span="2" class="icon2">
-              <a href="https://v.douyin.com/iJtfCFap/">
+              <a href="https://v.douyin.com/i6BuAgMJ/">
                 <el-image :src="getAssetsFile('tiktok.jpg')" class="icon icon-container tiktok" :fit="'contain'"></el-image>
               </a>
             </el-col>
@@ -113,7 +98,7 @@
         <el-col :span="5">   
         <div class="iconsss" />  
           <el-row justify="center" class="follow">Contact US</el-row>
-          <el-row justify="center" style="color: white">cssa@gmail.com</el-row>
+          <el-row justify="center" style="color: white">ucsdcssa1985@gmail.com</el-row>
           <el-row justify="center">
             <form target="_blank" action="https://formsubmit.co/jic034@ucsd.edu" method="POST" >
               <div class="form-group" >
@@ -564,7 +549,7 @@ export default {
 
 <style scoped lang="less">
   .common-layout {
-    height: 23vw;
+    height: 25vw;
     background-color: #313338;
     padding: 0;
   }
@@ -685,7 +670,7 @@ export default {
 
   .rounded-input {
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
   }
   
   
