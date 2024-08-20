@@ -6,6 +6,8 @@ import router from "./router/router"
 import axios from "axios"
 import {classified} from "./classified"
 
+
+
 const app = createApp(App)
 
 axios.defaults.baseURL = classified.backendAddress

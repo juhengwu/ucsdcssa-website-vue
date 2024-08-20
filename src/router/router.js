@@ -1,6 +1,7 @@
 import {createRouter, createWebHashHistory} from "vue-router";
 import Index from "../views/index.vue"
 import Home from "../views/home.vue";
+import Sponsors from '../views/Sponsors.vue';
 import Department from "../views/department.vue";
 import LoginRegister from "../views/login-register.vue";
 import MobileIndex from "../views/mobile-index.vue";
@@ -21,6 +22,11 @@ const routes = [
                 path: "home",
                 component: Home,
                 name: "Home"
+            },
+            {
+                path: "sponsors",
+                component: Sponsors,
+                name: "Sponsors",
             },
             {
                 // params现在必须定义在地址里了 https://www.cnblogs.com/liao-yi/articles/17028269.html

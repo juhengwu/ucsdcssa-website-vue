@@ -5,13 +5,13 @@
       <el-row justify="space-between" align="middle">
 
         <!--CSSA LOGO-->
-        <el-col :span="16" :offset="2">
+        <el-col :span="12" :offset="2">
           <el-row align="middle">
             <el-image class="logo" :src="getAssetsFile('logo-with-text.png')" fit="contain"></el-image>
           </el-row>
         </el-col>
 
-        <el-col :span="6">
+        <el-col :span="8">
           <el-row justify="space-between" align="middle">
 
             <!--主页按钮-->
@@ -32,6 +32,9 @@
                 </el-button>
               </div>
             </el-col>
+
+
+
 
             <!--关于CSSA按钮-->
             <!--锚点做起来太麻烦，感觉没有必要，先去掉吧-->
@@ -91,7 +94,7 @@
             <!--  </el-col>-->
 
             <!--部门折叠面板-->
-            <el-col :span="6">
+            <el-col :span="3.75">
               <el-dropdown>
           <span class="el-dropdown-link">
             部门介绍
@@ -113,6 +116,26 @@
                 </template>
               </el-dropdown>
             </el-col>
+
+            <!--访问赞助商-->
+            <el-col :span="2.5">
+              <div>
+                <router-link :to="{ name: 'Sponsors' }">
+                  <el-button 
+                    plain 
+                    id="sponsors-page-button" 
+                    class="el-dropdown-link no-border-button"
+                    style="border: none; box-shadow: none;">
+                    赞助商
+                  </el-button>
+
+                </router-link>
+              </div>
+            </el-col>
+
+
+            
+
 
             <!--校内社团介绍折叠面板-->
             <!--  <el-col :span="6">-->
@@ -198,6 +221,7 @@ export default {
 }
 </script>
 
+
 <style scoped lang="less">
   .common {
     background-color: white;
@@ -212,7 +236,7 @@ export default {
 
   .el-dropdown-link {
     font-family: sans-serif;
-    font-size: 1vw;
+    font-size: 0.9vw;
     white-space: nowrap;
     vertical-align: baseline;
     line-height: 2.5vw;
