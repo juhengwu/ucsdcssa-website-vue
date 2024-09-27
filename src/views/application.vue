@@ -5,7 +5,7 @@
         <h1>CSSA Application</h1>
         <p>如果你有兴趣加入CSSA，请填写此表格，我们将尽快与你联系。</p>
         <h2>Tell me about yourself</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-VYAYZ9F0YfjLiymFCDVDEJ4CSVLGkpPfGNq1I8gVRYK7OQ/viewform?embedded=true" width="640" height="1886">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfaqiePyewGlCKrZS4G59Es_0BG_MSIm52e1C7b8PGgqoaFxg/viewform?embedded=true" width="1000" height="1886">Loading…</iframe>
       </el-main>
     </el-container>
   </div>
