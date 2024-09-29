@@ -62,7 +62,7 @@
                     <a href="https://mp.weixin.qq.com/s/sFuOISwjORAB46fc_CrCeQ" target="_blank">
                       <el-dropdown-item>新生资源</el-dropdown-item>
                     </a>
-                    <a href="https://mp.weixin.qq.com/s/nYxpPqBgKjTkYPmhf7qJMg" target="_blank">
+                    <a href="https://mp.weixin.qq.com/s/IYE1GxImwbO42X6K3gqzRw" target="_blank">
                       <el-dropdown-item>新生见面会</el-dropdown-item>
                     </a>
                     <router-link to="/home/application">
