@@ -5,17 +5,16 @@
       <el-row justify="space-between" align="middle">
 
         <!--CSSA LOGO-->
-        <el-col :span="12" :offset="2">
+        <el-col :span="16" :offset="2">
           <el-row align="middle">
             <el-image class="logo" :src="getAssetsFile('logo-with-text.png')" fit="contain"></el-image>
           </el-row>
         </el-col>
 
-        <el-col :span="8">
+        <el-col :span="6">
           <el-row justify="space-between" align="middle">
 
             <!--主页按钮-->
-            <!--<el-col :span="2.5">-->
             <el-col :span="2.5">
               <div>
                 <el-button plain class="el-dropdown-link" id="home-page-button" link
@@ -33,16 +32,16 @@
               </div>
             </el-col>
 
-
-
-
-            <!--关于CSSA按钮-->
-            <!--锚点做起来太麻烦，感觉没有必要，先去掉吧-->
-            <!--<el-col :span="4.5">-->
-            <!--  <div>-->
-            <!--    <el-button type="plain" class="el-dropdown-link" link @click="goAnchor('homeintro')">关于CSSA</el-button>-->
-            <!--  </div>-->
-            <!--</el-col>-->
+            <!-- 赞助商按钮 -->
+            <!-- 这是新添加的部分 -->
+            <el-col :span="3.5">
+              <div>
+                <el-button plain class="el-dropdown-link" link
+                           @click="router.push('/sponsors'); clearButtonState();">赞助商
+                </el-button>
+              </div>
+            </el-col>
+            <!-- 结束新添加的部分 -->
 
             <!--学生服务折叠面板-->
             <el-col :span="3.5">
@@ -56,13 +55,13 @@
                 <template #dropdown>
                   <el-dropdown-menu>
                     <!--pdf文件太大了，打包的时候不会被编译成代码。因此需要放在public文件夹里面。这样打包的时候会被直接复制到dist文件夹中。-->
-                    <a href="/一城一程——UCSD%20CSSA新生手册%205.0.pdf" target="_blank">
+                    <a href="https://ucsd-cssa-official.github.io/city-to-journey/docs/" target="_blank">
                       <el-dropdown-item>"一城一程"UCSD新生手册</el-dropdown-item>
                     </a>
                     <a href="https://mp.weixin.qq.com/s/sFuOISwjORAB46fc_CrCeQ" target="_blank">
                       <el-dropdown-item>新生资源</el-dropdown-item>
                     </a>
-                    <a href="https://mp.weixin.qq.com/s/IYE1GxImwbO42X6K3gqzRw" target="_blank">
+                    <a href="https://mp.weixin.qq.com/s/nYxpPqBgKjTkYPmhf7qJMg" target="_blank">
                       <el-dropdown-item>新生见面会</el-dropdown-item>
                     </a>
                     <router-link to="/home/application">
@@ -73,28 +72,8 @@
               </el-dropdown>
             </el-col>
 
-            <!--活动折叠面板-->
-            <!--  <el-col :span="3.75">-->
-            <!--    <el-dropdown>-->
-            <!--<span class="el-dropdown-link">-->
-            <!--  活动-->
-            <!--  <el-icon class="el-icon&#45;&#45;right">-->
-            <!--    <arrow-down/>-->
-            <!--  </el-icon>-->
-            <!--</span>-->
-            <!--      <template #dropdown>-->
-            <!--        <el-dropdown-menu>-->
-            <!--          <el-dropdown-item>活动主页</el-dropdown-item>-->
-            <!--          <el-dropdown-item>开学季活动</el-dropdown-item>-->
-            <!--          <el-dropdown-item>春节系列活动</el-dropdown-item>-->
-            <!--          <el-dropdown-item>春季篮球赛</el-dropdown-item>-->
-            <!--        </el-dropdown-menu>-->
-            <!--      </template>-->
-            <!--    </el-dropdown>-->
-            <!--  </el-col>-->
-
             <!--部门折叠面板-->
-            <el-col :span="3.75">
+            <el-col :span="6">
               <el-dropdown>
           <span class="el-dropdown-link">
             部门介绍
@@ -116,49 +95,6 @@
                 </template>
               </el-dropdown>
             </el-col>
-
-            <!--访问赞助商-->
-            <el-col :span="2.5">
-              <div>
-                <router-link :to="{ name: 'Sponsors' }">
-                  <el-button 
-                    plain 
-                    id="sponsors-page-button" 
-                    class="el-dropdown-link no-border-button"
-                    style="border: none; box-shadow: none;">
-                    赞助商
-                  </el-button>
-
-                </router-link>
-              </div>
-            </el-col>
-
-
-            
-
-
-            <!--校内社团介绍折叠面板-->
-            <!--  <el-col :span="6">-->
-            <!--    <el-dropdown>-->
-            <!--<span class="el-dropdown-link">-->
-            <!--  校内社团介绍-->
-            <!--  <el-icon class="el-icon&#45;&#45;right">-->
-            <!--    <arrow-down/>-->
-            <!--  </el-icon>-->
-            <!--</span>-->
-            <!--      <template #dropdown>-->
-            <!--        <el-dropdown-menu>-->
-            <!--          <el-dropdown-item>CES 中国工程学会</el-dropdown-item>-->
-            <!--          <el-dropdown-item>Chinese Computer Community</el-dropdown-item>-->
-            <!--          <el-dropdown-item>剧本杀&跑团社团</el-dropdown-item>-->
-            <!--          <el-dropdown-item>FMO 国风音乐社团</el-dropdown-item>-->
-            <!--          <el-dropdown-item>海螺心理</el-dropdown-item>-->
-            <!--          <el-dropdown-item>三晤剧社</el-dropdown-item>-->
-            <!--          <el-dropdown-item>CCDT 拂衣舞社</el-dropdown-item>-->
-            <!--        </el-dropdown-menu>-->
-            <!--      </template>-->
-            <!--    </el-dropdown>-->
-            <!--  </el-col>-->
 
           </el-row>
         </el-col>
@@ -221,7 +157,6 @@ export default {
 }
 </script>
 
-
 <style scoped lang="less">
   .common {
     background-color: white;
@@ -236,7 +171,7 @@ export default {
 
   .el-dropdown-link {
     font-family: sans-serif;
-    font-size: 0.9vw;
+    font-size: 1vw;
     white-space: nowrap;
     vertical-align: baseline;
     line-height: 2.5vw;
