@@ -65,6 +65,9 @@
                     <router-link to="/home/application">
                       <el-dropdown-item>报名页面</el-dropdown-item>
                     </router-link>
+                    <a href="/Study Guidelines for CSE 11 at UCSD.pdf" target="_blank">
+                      <el-dropdown-item>UCSD CSE 11 学习指南</el-dropdown-item>
+                    </a>
                   </el-dropdown-menu>
                 </template>
               </el-dropdown>
