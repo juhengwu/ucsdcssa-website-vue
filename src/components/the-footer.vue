@@ -100,20 +100,21 @@
           <el-row justify="center" class="follow">Contact US</el-row>
           <el-row justify="center" style="color: white">ucsdcssa1985@gmail.com</el-row>
           <el-row justify="center">
-            <form target="_blank" action="https://formsubmit.co/jic034@ucsd.edu" method="POST" >
+            <form action="https://formsubmit.co/jic034@ucsd.edu" method="POST">
+            <!-- FIXME: formsubmit doesn't work aka. no contact email sent at all. -->
               <div class="form-group" >
                 <div class="form-row" >
-                  <div class="col">
+                  <!-- <div class="col">
                     <input type="text" name="name" class="form-control rounded-input" placeholder="Your Full Name" required>
-                  </div>
+                  </div> -->
                   <div class="col">
                     <input type="email" name="email" class="form-control rounded-input" placeholder="Your Email Address" required>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <textarea placeholder="Your Message" class="form-control rounded-input" name="message" rows="10" required></textarea>
-              </div>
+              </div> -->
               <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
             </form>
           </el-row>
@@ -262,6 +263,10 @@ export default {
   .rounded-input {
     border-radius: 5px;
     margin-bottom: 1px;
+  }
+
+  button {
+  margin-top: 10px; /* 控制按钮和上方输入框的距离 */
   }
   
   
