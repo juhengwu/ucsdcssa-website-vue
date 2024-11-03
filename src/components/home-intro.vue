@@ -2,7 +2,7 @@
 
   <!--播放bilibili视频-->
   <el-dialog v-model="dialogVisible" title="CSSA宣传片" width="70%" destroy-on-close>
-    <iframe class="player" src="//player.bilibili.com/player.html?aid=906602710&bvid=BV19M4y1D7Dt&cid=1001206853&page=1"
+    <iframe class="player" src="//player.bilibili.com/player.html?bvid=BV1Bi421y71D&page=1"
             border="0" framespacing="0" allowfullscreen="true">
     </iframe>
   </el-dialog>

@@ -111,6 +111,8 @@
                     <el-dropdown-item @click="goToDepartment('新媒体部')">新媒体部</el-dropdown-item>
                     <el-dropdown-item @click="goToDepartment('宣传部')">宣传部</el-dropdown-item>
                     <el-dropdown-item @click="goToDepartment('学术部')">学术部</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('职业发展部')">职业发展部</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('研究生部')">研究生部</el-dropdown-item>
                     <el-dropdown-item @click="goToDepartment('主席团')">主席团</el-dropdown-item>
                   </el-dropdown-menu>
                 </template>
