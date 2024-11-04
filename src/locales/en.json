@@ -1,0 +1,109 @@
+{
+    "nav": {
+        "home": "Home",
+        "mobile":"Mobile view",
+        "service":"Service",
+        "department":"Department",
+        "us":"About us",
+        "sponsor":"Sponsor",
+        "dropdown":{
+            "clubFair":"Back-to-School Event, Club Fair",
+            "summerEcho": "Summer Echo, Online Photography Contest",
+            "academicInterview": "Academic Interview"
+        },
+        "depart": {
+            "development": "Development Department",
+            "hr": "Human Resources Department",
+            "externalRelations": "External Relations Department",
+            "cultureAndSports": "Culture and Sports Department",
+            "newMedia": "New Media Department",
+            "promotion": "Public Relations Department",
+            "academic": "Academic Department",
+            "executiveTeam": "Executive Team"
+        },
+        "resources": {
+            "cssaManual": "CSSA New Student Manual",
+            "newStudentResources": "New Student Resources",
+            "welcomeMeeting": "Welcome Meeting",
+            "applicationPage": "Application Page",
+            "studyGuideCSE11": "UCSD CSE 11 Study Guide"   
+        }
+    },
+    "article":{
+        "recentPopular": "Recent Popular on WeChat",
+        "clickToRead": "Click the title to read the original article, or click",
+        "here": " here ",
+        "followUs": "to scan the QR code and follow us"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": {
+        "q1": "Is CSSA a for-profit organization?",
+        "a1": "CSSA is a non-profit, student-led organization. Unlike some other student organizations, most of our funding comes from event sponsors.",
+        "q2": "I want to join CSSA. How can I apply?",
+        "a2": "Click on the departments at the top of the page to view each department’s recruitment requirements!",
+        "q3": "Why should I join CSSA?",
+        "a3": "For us, this is home.",
+        "q4": "How do I register for student pick-up service?",
+        "a4": "Please first learn about our new student services here, then you can sign up via the CSSA WeChat mini-program.",
+        "q5": "How do I join the new student WeChat group?",
+        "a5_1": "Please add one of our helpers on ",
+        "a5_2": "WeChat",
+        "a5_3": ". After verifying your identity, they will add you to the group.",
+        "a5_4": "UCSD CSSA Helper 1 WeChat ID:",
+        "a5_5": "UCSD CSSA Helper 2 WeChat ID:"
+        }
+    },
+    "headline": {
+        "mainTitle": "Public Service, People First",
+        "subTitle": "We generate love to light up your journey as a student",
+        "popularNews": "Recent Popular News",
+        "followCSSA": "Follow CSSA on WeChat",
+        "cards": {
+            "title1": "We are...",
+            "content1_1": "CSSA, ",
+            "content1_2": "Chinese Students and Scholars Association",
+            "content1_3": "The official global organization of Chinese students and scholars, active in major universities across all continents.",
+            "content1_4": ", as a member of the global CSSA family, was founded in 1985 to serve Chinese students and scholars at UCSD in academics, career development, life, and entertainment.",
+            "title2": "Campus Information",
+            "content2_1": "Course selection, job seeking, tuition payment, online visa, major introduction, COVID testing...",
+            "content2_2": "Follow CSSA on WeChat to get the latest campus and community updates.",
+            "title3": "Event Organization",
+            "content3_1": "Application sharing, Spring Festival Gala, Werewolf game, poker, board game night, storytelling, tea party, basketball tournament...",
+            "content3_2": "We organize academic, social, and entertainment events for you!",
+            "title4": "New Student Services",
+            "content4_1": "New student group, summer meet-ups in China, airport pickup, bank and phone setup...",
+            "content4_2": "Starting a new journey abroad? CSSA is here to support you in adapting to a new environment."
+        }
+    },
+    "intro": {
+        "bigHeader": "What is CSSA?",
+        "subHeader": "A non-political, non-religious, and non-profit student group",
+        "description": "CSSA serves as a bridge between Chinese students, scholars, and the Chinese Embassy in the United States, actively protecting their legal rights abroad. CSSA does not have a membership system; all Chinese students and scholars at UCSD are served by CSSA.",
+        "commitmentTitle": "Our Commitment",
+        "commitmentText": "We are committed to uniting and serving Chinese students and scholars; enriching their social, academic, and career experiences; and promoting cultural exchange and understanding between China and the U.S.",
+        "valuesTitle": "Our Values",
+        "valuesText": "Serving Chinese students and scholars is the foundation of CSSA. The collective interests of UCSD Chinese students and scholars should always take precedence over the interests of CSSA as an organization. Every action taken by CSSA should aim to meet the practical needs of UCSD Chinese students and scholars, ensuring they benefit from it.",
+        "aspirationTitle": "Our Aspiration",
+        "aspirationText": "CSSA members, as Chinese students and scholars, are also the individuals we serve. CSSA hopes its members find warmth within the CSSA community, forge friendships with like-minded peers, and develop teamwork, leadership, and other skills through the experience of serving CSSA."
+  },
+    "categories": {
+        "all": "All",
+        "cssaOriginal": "CSSA Original",
+        "eventArticles": "Event Articles",
+        "academicResources": "Academic Resources",
+        "mustReadForNewStudents": "Must-Read for New Students",
+        "lifeAndSurroundings": "Life and Surroundings",
+        "policyNews": "Policy News",
+        "exclusiveSponsors": "Exclusive Sponsors",
+        "others": "Others"
+    },
+    "buttons": {
+        "loadMore": "Load More",
+        "noMoreContent": "No More Content"
+    },
+    "department":{
+        "home":"home",
+        "member":"department members"
+    }
+}

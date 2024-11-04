@@ -5,11 +5,11 @@
     <!--顶部标题+小标题-->
     <el-header>
       <el-row justify="center">
-        <h2>近期公众号热门</h2>
+        <h2>{{ $t("article.recentPopular") }}</h2>
       </el-row>
       <el-row justify="center">
         <!--这里要打开的图片需要放到public文件夹下。-->
-        <p>点击标题阅读原文，或点击<a target="_blank" href="/公众号海报.jpg">这里</a>扫码关注我们</p>
+        <p>{{ $t("article.clickToRead") }}<a target="_blank" href="/公众号海报.jpg">{{ $t("article.here") }}</a>{{ $t("article.followUs") }}</p>
       </el-row>
     </el-header>
 
@@ -20,7 +20,7 @@
         <!--板块种类区分-->
         <el-tabs stretch class="article-tab" @tab-change="onTabChange">
           <!--具体种类所属的板块-->
-          <el-tab-pane v-for="category in categories" :label="category" lazy>
+          <el-tab-pane v-for="category in categories" :label="$t(category)" lazy>
             <el-row class="article-tab-pane">
               <el-col :span="8" v-for="article in articles">
                 <home-article-tab :title="article['title']" :categories="article['categories']"
@@ -32,7 +32,7 @@
               <el-button type="danger" plain round @click="loadMore()" :loading="loading">加载更多</el-button>
             </el-row>
             <el-row justify="center" v-if="!articles.length">
-              无更多内容
+              {{ $t("buttons.noMoreContent") }}
             </el-row>
           </el-tab-pane>
 
@@ -47,6 +47,7 @@
 import HomeArticleTab from "./home-article-tab.vue";
 import {classified} from "../classified";
 import {staticVariables} from "../staticVariables";
+import zh from "../locales/zh.json"
 import {inject} from "vue";
 
 const categories = staticVariables.categories

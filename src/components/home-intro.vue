@@ -26,8 +26,8 @@
       <!--大标题-->
       <el-row>
         <el-col :offset="1" :span="23">
-          <h1>什么是CSSA？</h1>
-          <h2>非政治、非宗教、非盈利的自治学生学者团体</h2>
+          <h1>{{ $t("intro.bigHeader") }}</h1>
+          <h2>{{ $t("intro.subHeader") }}</h2>
         </el-col>
       </el-row>
 
@@ -35,7 +35,7 @@
         <el-col :span="22">
           <el-col :offset="1" :span="23">
             <p>
-              CSSA是中国学生、学者与中国驻美大使馆沟通的桥梁。积极维护中国学生、学者在海外的合法权益。CSSA没有会员制，所有UCSD的华人学生、学者，都是CSSA的服务的对向
+              {{ $t("intro.description") }}
             </p>
           </el-col>
         </el-col>
@@ -49,8 +49,8 @@
         </el-col>
         <!--图片右边第一个小标题-->
         <el-col :span="12">
-          <h1>我们致力于</h1>
-          <p class="text">团结和服务中国学生学者；丰富中国学生学者的社交、学术、职业体验；促进中美文化交流与了解</p>
+          <h1>{{ $t("intro.commitmentTitle") }}</h1>
+          <p class="text">{{ $t("intro.commitmentText") }}</p>
         </el-col>
       </el-row>
 
@@ -62,9 +62,8 @@
         </el-col>
         <!--图片右边第二个小标题-->
         <el-col :span="12">
-          <h1>我们的价值观</h1>
-          <p class="text">服务中国学生、学者是CSSA的立会之本。UCSD中国学生、学者的集体利益应永远高于CSSA的社团利益。“满足UCSD中国学生、学者的实际需求，使学生、学者受益”
-            应是CSSA每一个行动的根本目的</p>
+          <h1>{{ $t("intro.valuesTitle") }}</h1>
+          <p class="text">{{ $t("intro.valuesText") }}</p>
         </el-col>
       </el-row>
 
@@ -77,9 +76,9 @@
         <!--图片右边第三个小标题-->
         <el-col :span="12">
           <div/>
-          <h1>我们希望</h1>
+          <h1>{{ $t("intro.aspirationTitle") }}</h1>
           <p class="text">
-            CSSA的成员作为中国学生、学者，也是CSSA服务的对象。CSSA希望自己的成员在CSSA找到家的温暖，通过CSSA结实志同道合的朋友，并通过“服务CSSA”的过程，锻炼自身的团队合作能力、领导能力，和其他技能</p>
+            {{ $t("intro.aspirationText") }}</p>
         </el-col>
       </el-row>
     </el-main>

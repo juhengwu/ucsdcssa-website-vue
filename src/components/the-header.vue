@@ -13,13 +13,21 @@
 
         <el-col :span="10">
           <el-row justify="space-between" align="middle">
+            <!-- 改语言按钮  -->
+            <el-col :span="2.5">
+              <div>
+                <el-button plain link class="el-dropdown-link" id="home-page-button" @click="switchLanguage()">
+                  <el-icon :size = "20"><Switch /></el-icon>
+                </el-button>
+              </div>
+            </el-col>
 
             <!--主页按钮-->
             <!--<el-col :span="2.5">-->
             <el-col :span="2.5">
               <div>
                 <el-button plain class="el-dropdown-link" id="home-page-button" link
-                           @click="router.replace({name: 'Home'}); clearButtonState('home-page-button');">主页
+                           @click="router.replace({name: 'Home'}); clearButtonState('home-page-button');">{{ $t("nav.home") }}
                 </el-button>
               </div>
             </el-col>
@@ -28,7 +36,7 @@
             <el-col :span="4.5">
               <div>
                 <el-button plain class="el-dropdown-link" id="mobile-page-button"  link @click="openMobilePage">
-                  访问移动端页面
+                  {{ $t("nav.mobile") }}
                 </el-button>
               </div>
             </el-col>
@@ -45,7 +53,7 @@
             <el-col :span="3">
               <el-dropdown>
           <span class="el-dropdown-link">
-            学生服务
+            {{ $t("nav.service") }}
             <el-icon class="el-icon--right">
               <arrow-down/>
             </el-icon>
@@ -54,19 +62,19 @@
                   <el-dropdown-menu>
                     <!--pdf文件太大了，打包的时候不会被编译成代码。因此需要放在public文件夹里面。这样打包的时候会被直接复制到dist文件夹中。-->
                     <a href="/一城一程——UCSD%20CSSA新生手册%205.0.pdf" target="_blank">
-                      <el-dropdown-item>一城一程"UCSD新生手册</el-dropdown-item>
+                      <el-dropdown-item>{{ $t("nav.resources.cssaManual") }}</el-dropdown-item>
                     </a>
                     <a href="https://mp.weixin.qq.com/s/sFuOISwjORAB46fc_CrCeQ" target="_blank">
-                      <el-dropdown-item>新生资源</el-dropdown-item>
+                      <el-dropdown-item>{{ $t("nav.resources.newStudentResources") }}</el-dropdown-item>
                     </a>
                     <a href="https://mp.weixin.qq.com/s/nYxpPqBgKjTkYPmhf7qJMg" target="_blank">
-                      <el-dropdown-item>新生见面会</el-dropdown-item>
+                      <el-dropdown-item>{{ $t("nav.resources.welcomeMeeting") }}</el-dropdown-item>
                     </a>
                     <router-link to="/home/application">
-                      <el-dropdown-item>报名页面</el-dropdown-item>
+                      <el-dropdown-item>{{ $t("nav.resources.applicationPage") }}</el-dropdown-item>
                     </router-link>
                     <a href="/Study Guidelines for CSE 11 at UCSD.pdf" target="_blank">
-                      <el-dropdown-item>UCSD CSE 11 学习指南</el-dropdown-item>
+                      <el-dropdown-item>{{ $t("nav.resources.studyGuideCSE11") }}</el-dropdown-item>
                     </a>
                   </el-dropdown-menu>
                 </template>
@@ -94,26 +102,26 @@
             <!--  </el-col>-->
 
             <!--部门折叠面板-->
-            <el-col :span="3">
+            <el-col :span="4">
               <el-dropdown>
           <span class="el-dropdown-link">
-            部门介绍
+            {{ $t("nav.department") }}
             <el-icon class="el-icon--right">
               <arrow-down/>
             </el-icon>
           </span>
                 <template #dropdown>
                   <el-dropdown-menu>
-                    <el-dropdown-item @click="goToDepartment('开发部')">开发部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('人事部')">人事部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('外联部')">外联部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('文体部')">文体部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('新媒体部')">新媒体部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('宣传部')">宣传部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('学术部')">学术部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('职业发展部')">职业发展部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('研究生部')">研究生部</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('主席团')">主席团</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('开发部')">{{ $t("nav.depart.development") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('人事部')">{{ $t("nav.depart.hr") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('外联部')">{{ $t("nav.depart.externalRelations") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('文体部')">{{ $t("nav.depart.culturalAndSports") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('新媒体部')">{{ $t("nav.depart.newMedia") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('宣传部')">{{ $t("nav.depart.promotion") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('学术部')">{{ $t("nav.depart.academic") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('职业发展部')">{{ $t("nav.depart.professional") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('研究生部')">{{ $t("nav.depart.masters") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('主席团')">{{ $t("nav.depart.executiveTeam") }}</el-dropdown-item>
                   </el-dropdown-menu>
                 </template>
               </el-dropdown>
@@ -148,7 +156,7 @@
             <el-col :span="3">
               <el-dropdown>
             <span class="el-dropdown-link">
-              关于我们
+              {{ $t("nav.us") }}
               <el-icon class="el-icon--right">
                 <arrow-down/>
               </el-icon>
@@ -156,13 +164,13 @@
                   <template #dropdown>
                     <el-dropdown-menu>
                       <a href="https://mp.weixin.qq.com/s/NPgJVadmqtCoHwW8m6zNYw" target="_blank">
-                        <el-dropdown-item>开学季活动|Club Fair</el-dropdown-item>
+                        <el-dropdown-item>{{ $t("nav.dropdown.clubFair") }}</el-dropdown-item>
                       </a>
                       <a href="https://mp.weixin.qq.com/s/ridNY9zyIwH0xYT6WbjFuw" target="_blank">
-                        <el-dropdown-item>夏日回音|线上摄影大赛</el-dropdown-item>
+                        <el-dropdown-item>{{ $t("nav.dropdown.summerEcho") }}</el-dropdown-item>
                       </a>
                       <a href="https://mp.weixin.qq.com/s/ttK0D3K8h_zFERkrEGURTA" target="_blank">
-                        <el-dropdown-item>学术访谈</el-dropdown-item>
+                        <el-dropdown-item>{{ $t("nav.dropdown.academicInterview") }}</el-dropdown-item>
                       </a>
                     </el-dropdown-menu>
                   </template>
@@ -174,7 +182,7 @@
               <div>
                 <el-button plain class="el-dropdown-link" id="home-page-button" link
                            @click="router.replace({name: 'Sponsors'}); 
-                           clearButtonState('home-page-button');">赞助商
+                           clearButtonState('home-page-button');">{{ $t("nav.sponsor") }}
                 </el-button>
               </div>
             </el-col>
@@ -193,6 +201,7 @@
 <script setup>
 import {getAssetsFile} from "../utils/getAssetsFile";
 import {ArrowDown} from '@element-plus/icons-vue';
+import {Switch} from '@element-plus/icons-vue';
 import {useRouter} from "vue-router"
 
 const router = useRouter();
@@ -239,7 +248,12 @@ function openMobilePage() {
 
 <script>
 export default {
-  name: "TheHeader"
+  name: "TheHeader",
+  methods: {
+    switchLanguage() {
+      this.$changeLanguage();
+    }
+  }
 }
 </script>
 

@@ -6,7 +6,7 @@
       <el-header>
         <!--FAQ区域标题-->
         <h2>F. A. Q</h2>
-        <p>常见问题汇总</p>
+        <p>{{ $t("faq.title") }}</p>
       </el-header>
       <!--主要区域容器-->
       <el-main>
@@ -25,12 +25,12 @@
               </el-icon>
               <div>
                 <!--第一个面板标题内容-->
-                <h3>CSSA是盈利性质的吗？你们怎么赚钱? </h3>
+                <h3>{{ $t("faq.questions.q1") }}</h3>
               </div>
             </template>
             <div>
               <!--第一个面板折叠内容-->
-              <p class="text">CSSA是非营利性自发学生组织。和某些其他留学生组织不同，我们大部分经费来自活动赞助商。</p>
+              <p class="text">{{ $t("faq.questions.a1") }}</p>
             </div>
           </el-collapse-item>
           <!--第二个折叠面板-->
@@ -40,11 +40,11 @@
                 <question-filled/>
               </el-icon>
               <!--第二个面板标题内容-->
-              <h3>我想要加入CSSA，该如何报名呢？</h3>
+              <h3>{{ $t("faq.questions.q2") }}</h3>
             </template>
             <div>
               <!--第二个面板折叠内容-->
-              <p class="text">点击页面上方的部门，可以查看各部门的招新要求哦～</p>
+              <p class="text">{{ $t("faq.questions.a2") }}</p>
             </div>
           </el-collapse-item>
           <!--第三个折叠面板-->
@@ -54,11 +54,11 @@
                 <question-filled/>
               </el-icon>
               <!--第三个面板标题内容-->
-              <h3>为什么要加入CSSA?</h3>
+              <h3>{{ $t("faq.questions.q3") }}</h3>
             </template>
             <div>
               <!--第三个面板折叠内容-->
-              <p class="text">对我们来说，这里就是家。</p>
+              <p class="text">{{ $t("faq.questions.a3") }}</p>
             </div>
           </el-collapse-item>
           <!--第四个折叠面板-->
@@ -68,11 +68,11 @@
                 <question-filled/>
               </el-icon>
               <!--第四个面板折叠内容-->
-              <h3>CSSA的新生接机服务如何报名？</h3>
+              <h3>{{ $t("faq.questions.q4") }}</h3>
             </template>
             <div>
               <!--第四个面板折叠内容-->
-              <p class="text">请先从这里了解我们的新生服务细节，然后可以通过CSSA接机微信小程序报名。</p>
+              <p class="text">{{ $t("faq.questions.a4") }}</p>
             </div>
           </el-collapse-item>
           <!--第五个折叠面板-->
@@ -82,23 +82,23 @@
                 <question-filled/>
               </el-icon>
               <!--第五个面板折叠内容-->
-              <h3>我是新生，如何加入新生微信群？</h3>
+              <h3>{{ $t("faq.questions.q5") }}</h3>
             </template>
             <div>
               <!--第五个面板折叠内容-->
-              <p class="text">请加任意我们的小助手
+              <p class="text">{{ $t("faq.questions.a5_1") }}
                 <!--更改字体颜色-->
-                <text style="color: limegreen">微信号</text>
-                ，验证身份后，她会拉你入群。
+                <text style="color: limegreen">{{ $t("faq.questions.a5_2") }}</text>
+                {{ $t("faq.questions.a5_3") }}
               </p>
             </div>
             <div>
-              <p class="text">UCSD CSSA 小助手1 WeChat ID:
+              <p class="text">{{ $t("faq.questions.a5_4") }}
                 <text style="color: cornflowerblue">UCSDCSSA</text>
               </p>
             </div>
             <div>
-              <p class="text">UCSD CSSA 小助手2 WeChat ID:
+              <p class="text">{{ $t("faq.questions.a5_5") }}
                 <text style="color: cornflowerblue">UCSDCSSA2</text>
               </p>
             </div>

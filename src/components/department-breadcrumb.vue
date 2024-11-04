@@ -1,7 +1,7 @@
 <template>
   <div class="navi">
     <ul class="breadcrumb">
-      <li><a href="../#/home">主页</a></li>
+      <li><a href="../#/home">{{ $t("department.home") }}</a></li>
       <li><a :href="`../#/department/${departmentName}`">{{ departmentName }}</a></li>
     </ul>
   </div>

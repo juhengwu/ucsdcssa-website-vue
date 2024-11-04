@@ -1,0 +1,109 @@
+{
+    "nav": {
+        "home": "主页",
+        "mobile":"访问移动端页面",
+        "service":"学生服务",
+        "department":"部门介绍",
+        "us":"关于我们",
+        "sponsor":"赞助商",
+        "dropdown": {
+            "clubFair": "开学季活动 | Club Fair",
+            "summerEcho": "夏日回音 | 线上摄影大赛",
+            "academicInterview": "学术访谈"
+        },
+        "depart": {
+            "development": "开发部",
+            "hr": "人事部",
+            "externalRelations": "外联部",
+            "cultureAndSports": "文体部",
+            "newMedia": "新媒体部",
+            "promotion": "宣传部",
+            "academic": "学术部",
+            "executiveTeam": "主席团"
+        },
+        "resources": {
+            "cssaManual": "一城一程\"UCSD新生手册",
+            "newStudentResources": "新生资源",
+            "welcomeMeeting": "新生见面会",
+            "applicationPage": "报名页面",
+            "studyGuideCSE11": "UCSD CSE 11 学习指南"
+        }
+    },
+    "article": {
+        "recentPopular": "近期公众号热门",
+        "clickToRead": "点击标题阅读原文，或点击",
+        "here": "这里",
+        "followUs": "扫码关注我们"
+    },
+    "faq": {
+        "title": "F. A. Q",
+        "questions": {
+            "q1": "CSSA是盈利性质的吗？你们怎么赚钱?",
+            "a1": "CSSA是非营利性自发学生组织。和某些其他留学生组织不同，我们大部分经费来自活动赞助商。",
+            "q2": "我想要加入CSSA，该如何报名呢？",
+            "a2": "点击页面上方的部门，可以查看各部门的招新要求哦～",
+            "q3": "为什么要加入CSSA?",
+            "a3": "对我们来说，这里就是家。",
+            "q4": "CSSA的新生接机服务如何报名？",
+            "a4": "请先从这里了解我们的新生服务细节，然后可以通过CSSA接机微信小程序报名。",
+            "q5": "我是新生，如何加入新生微信群？",
+            "a5_1": "请加任意我们的小助手",
+            "a5_2": "微信号",
+            "a5_3": "，验证身份后，她会拉你入群。",
+            "a5_4": "UCSD CSSA 小助手1 WeChat ID:",
+            "a5_5": "UCSD CSSA 小助手2 WeChat ID:"
+        }
+    },
+    "headline": {
+        "mainTitle": "公益服务，以人为本",
+        "subTitle": "我们用爱发电，照亮您留学的路途",
+        "popularNews": "近期热门资讯",
+        "followCSSA": "关注CSSA公众号",
+        "cards": {
+            "title1": "我们是...",
+            "content1_1": "中国学生学者联合会",
+            "content1_2": "（Chinese Students and Scholars Association, 简称CSSA）",
+            "content1_3":"是海外中国学生、学者的全球官方组织，活跃在各大洲的高等学府.",
+            "content1_4": "作为全球CSSA大家庭中的一员，成立于1985年，旨在从学术、职业发展、生活、文娱等全方面服务UCSD华人学生、学者。",
+            "title2": "校园资讯",
+            "content2_1": "选课，求职，交学费，网课签证，专业介绍，新冠检测...",
+            "content2_2": "关注CSSA公众号让您获得第一手校内外信息。",
+            "title3": "活动组织",
+            "content3_1": "申研分享，春晚，狼人杀，德扑，桌游夜，故事汇，茶话会，篮球赛...",
+            "content3_2": "学术生活娱乐我们全安排！",
+            "title4": "新生服务",
+            "content4_1": "新生群，国内暑假见面会，机场接机，手机银行卡办理...",
+            "content4_2": "初到异国他乡，CSSA与你一起共度难关，适应新环境。"
+        }
+  },
+    "intro": {
+        "bigHeader": "什么是CSSA？",
+        "subHeader": "非政治、非宗教、非盈利的自治学生学者团体",
+        "description": "CSSA是中国学生、学者与中国驻美大使馆沟通的桥梁。积极维护中国学生、学者在海外的合法权益。CSSA没有会员制，所有UCSD的华人学生、学者，都是CSSA的服务的对象。",
+        "commitmentTitle": "我们致力于",
+        "commitmentText": "团结和服务中国学生学者；丰富中国学生学者的社交、学术、职业体验；促进中美文化交流与了解。",
+        "valuesTitle": "我们的价值观",
+        "valuesText": "服务中国学生、学者是CSSA的立会之本。UCSD中国学生、学者的集体利益应永远高于CSSA的社团利益。“满足UCSD中国学生、学者的实际需求，使学生、学者受益” 应是CSSA每一个行动的根本目的。",
+        "aspirationTitle": "我们希望",
+        "aspirationText": "CSSA的成员作为中国学生、学者，也是CSSA服务的对象。CSSA希望自己的成员在CSSA找到家的温暖，通过CSSA结识志同道合的朋友，并通过“服务CSSA”的过程，锻炼自身的团队合作能力、领导能力，和其他技能。"
+    },
+    "categories": {
+        "all": "全部",
+        "cssaOriginal": "CSSA原创",
+        "eventArticles": "活动推文",
+        "academicResources": "学术干货",
+        "mustReadForNewStudents": "新生必读",
+        "lifeAndSurroundings": "生活周边",
+        "policyNews": "政策要闻",
+        "exclusiveSponsors": "独家赞助",
+        "others": "其他"
+    },
+    "buttons": {
+        "loadMore": "加载更多",
+        "noMoreContent": "无更多内容"
+    },
+    "department":{
+        "home":"主页",
+        "member":"部门成员"
+    }
+}

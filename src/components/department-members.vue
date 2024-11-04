@@ -3,7 +3,7 @@
     <el-main>
       <!-- 部门成员 -->
       <div class="section-title">
-        <h2 style="font-size: 2.222vw; font-weight: bold">部门成员</h2>
+        <h2 style="font-size: 2.222vw; font-weight: bold">{{ $t("department.member") }}</h2>
         <p>{{ currentYear }} - {{ currentYear + 1 }}</p>
         <br>
       </div>
