@@ -115,7 +115,7 @@
                     <el-dropdown-item @click="goToDepartment('开发部')">{{ $t("nav.depart.development") }}</el-dropdown-item>
                     <el-dropdown-item @click="goToDepartment('人事部')">{{ $t("nav.depart.hr") }}</el-dropdown-item>
                     <el-dropdown-item @click="goToDepartment('外联部')">{{ $t("nav.depart.externalRelations") }}</el-dropdown-item>
-                    <el-dropdown-item @click="goToDepartment('文体部')">{{ $t("nav.depart.culturalAndSports") }}</el-dropdown-item>
+                    <el-dropdown-item @click="goToDepartment('文体部')">{{ $t("nav.depart.cultureAndSports") }}</el-dropdown-item>
                     <el-dropdown-item @click="goToDepartment('新媒体部')">{{ $t("nav.depart.newMedia") }}</el-dropdown-item>
                     <el-dropdown-item @click="goToDepartment('宣传部')">{{ $t("nav.depart.promotion") }}</el-dropdown-item>
                     <el-dropdown-item @click="goToDepartment('学术部')">{{ $t("nav.depart.academic") }}</el-dropdown-item>
