@@ -19,6 +19,8 @@
             "newMedia": "New Media Department",
             "promotion": "Public Relations Department",
             "academic": "Academic Department",
+            "professional": "Professional Development Department",
+            "masters": "Graduate Department",
             "executiveTeam": "Executive Team"
         },
         "resources": {
