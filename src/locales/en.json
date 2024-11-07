@@ -21,7 +21,8 @@
             "academic": "Academic Department",
             "professional": "Professional Development Department",
             "masters": "Graduate Department",
-            "executiveTeam": "Executive Team"
+            "executiveTeam": "Executive Team",
+            "honoraryMember": "Honorary Member"
         },
         "resources": {
             "cssaManual": "CSSA New Student Manual",

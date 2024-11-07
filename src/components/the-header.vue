@@ -133,6 +133,7 @@
                           <el-dropdown-item @click="goToDepartment('职业发展部')">{{ $t("nav.depart.professional") }}</el-dropdown-item>
                           <el-dropdown-item @click="goToDepartment('研究生部')">{{ $t("nav.depart.masters") }}</el-dropdown-item>
                           <el-dropdown-item @click="goToDepartment('主席团')">{{ $t("nav.depart.executiveTeam") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('荣誉部员')">{{ $t("nav.depart.honoraryMember") }}</el-dropdown-item>
                         </el-dropdown-menu>
                       </template>
                     </el-dropdown>
@@ -159,6 +160,7 @@
                           <el-dropdown-item @click="goToDepartment('职业发展部')">{{ $t("nav.depart.professional") }}</el-dropdown-item>
                           <el-dropdown-item @click="goToDepartment('研究生部')">{{ $t("nav.depart.masters") }}</el-dropdown-item>
                           <el-dropdown-item @click="goToDepartment('主席团')">{{ $t("nav.depart.executiveTeam") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('荣誉部员')">{{ $t("nav.depart.honoraryMember") }}</el-dropdown-item>
                         </el-dropdown-menu>
                       </template>
                     </el-dropdown>
@@ -185,6 +187,7 @@
                           <el-dropdown-item @click="goToDepartment('职业发展部')">{{ $t("nav.depart.professional") }}</el-dropdown-item>
                           <el-dropdown-item @click="goToDepartment('研究生部')">{{ $t("nav.depart.masters") }}</el-dropdown-item>
                           <el-dropdown-item @click="goToDepartment('主席团')">{{ $t("nav.depart.executiveTeam") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('荣誉部员')">{{ $t("nav.depart.honoraryMember") }}</el-dropdown-item>
                         </el-dropdown-menu>
                       </template>
                     </el-dropdown>
@@ -193,6 +196,7 @@
               </template>
             </el-dropdown>
           </el-col>
+
 
             <!--校内社团介绍折叠面板-->
             <!--  <el-col :span="6">-->
