@@ -21,7 +21,8 @@
             "academic": "学术部",
             "professional": "职业发展部",
             "masters": "研究生部",
-            "executiveTeam": "主席团"
+            "executiveTeam": "主席团",
+            "honoraryMember": "荣誉部员"
         },
         "resources": {
             "cssaManual": "一城一程\"UCSD新生手册",

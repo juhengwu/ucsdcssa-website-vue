@@ -100,6 +100,7 @@
             <!--      </template>-->
             <!--    </el-dropdown>-->
             <!--  </el-col>-->
+<<<<<<< HEAD
 
             <!--部门折叠面板-->
             <el-col :span="4">
@@ -126,6 +127,105 @@
                 </template>
               </el-dropdown>
             </el-col>
+=======
+            
+            <!-- 部门折叠面板 -->
+              <el-col :span="4">
+            <el-dropdown>
+              <span class="el-dropdown-link">
+                {{ $t("nav.department") }}
+                <el-icon class="el-icon--right">
+                  <arrow-down/>
+                </el-icon>
+              </span>
+              <template #dropdown>
+                <el-dropdown-menu>
+                  <!-- 2024-2025 -->
+                  <el-dropdown-item>
+                    <el-dropdown trigger="hover" placement="right-start">
+                      <span class="el-dropdown-link">
+                        2024-2025
+                        <el-icon class="el-icon--right">
+                          <arrow-right/>
+                        </el-icon>
+                      </span>
+                      <template #dropdown>
+                        <el-dropdown-menu>
+                          <el-dropdown-item @click="goToDepartment('开发部')">{{ $t("nav.depart.development") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('人事部')">{{ $t("nav.depart.hr") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('外联部')">{{ $t("nav.depart.externalRelations") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('文体部')">{{ $t("nav.depart.cultureAndSports") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('新媒体部')">{{ $t("nav.depart.newMedia") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('宣传部')">{{ $t("nav.depart.promotion") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('学术部')">{{ $t("nav.depart.academic") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('职业发展部')">{{ $t("nav.depart.professional") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('研究生部')">{{ $t("nav.depart.masters") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('主席团')">{{ $t("nav.depart.executiveTeam") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('荣誉部员')">{{ $t("nav.depart.honoraryMember") }}</el-dropdown-item>
+                        </el-dropdown-menu>
+                      </template>
+                    </el-dropdown>
+                  </el-dropdown-item>
+
+                  <!-- 2023-2024 -->
+                  <el-dropdown-item>
+                    <el-dropdown trigger="hover" placement="right-start">
+                      <span class="el-dropdown-link">
+                        2023-2024
+                        <el-icon class="el-icon--right">
+                          <arrow-right/>
+                        </el-icon>
+                      </span>
+                      <template #dropdown>
+                        <el-dropdown-menu>
+                          <el-dropdown-item @click="goToDepartment('开发部')">{{ $t("nav.depart.development") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('人事部')">{{ $t("nav.depart.hr") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('外联部')">{{ $t("nav.depart.externalRelations") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('文体部')">{{ $t("nav.depart.cultureAndSports") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('新媒体部')">{{ $t("nav.depart.newMedia") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('宣传部')">{{ $t("nav.depart.promotion") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('学术部')">{{ $t("nav.depart.academic") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('职业发展部')">{{ $t("nav.depart.professional") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('研究生部')">{{ $t("nav.depart.masters") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('主席团')">{{ $t("nav.depart.executiveTeam") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('荣誉部员')">{{ $t("nav.depart.honoraryMember") }}</el-dropdown-item>
+                        </el-dropdown-menu>
+                      </template>
+                    </el-dropdown>
+                  </el-dropdown-item>
+
+                  <!-- 2022-2023 -->
+                  <el-dropdown-item>
+                    <el-dropdown trigger="hover" placement="right-start">
+                      <span class="el-dropdown-link">
+                        2022-2023
+                        <el-icon class="el-icon--right">
+                          <arrow-right/>
+                        </el-icon>
+                      </span>
+                      <template #dropdown>
+                        <el-dropdown-menu>
+                          <el-dropdown-item @click="goToDepartment('开发部')">{{ $t("nav.depart.development") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('人事部')">{{ $t("nav.depart.hr") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('外联部')">{{ $t("nav.depart.externalRelations") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('文体部')">{{ $t("nav.depart.cultureAndSports") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('新媒体部')">{{ $t("nav.depart.newMedia") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('宣传部')">{{ $t("nav.depart.promotion") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('学术部')">{{ $t("nav.depart.academic") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('职业发展部')">{{ $t("nav.depart.professional") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('研究生部')">{{ $t("nav.depart.masters") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('主席团')">{{ $t("nav.depart.executiveTeam") }}</el-dropdown-item>
+                          <el-dropdown-item @click="goToDepartment('荣誉部员')">{{ $t("nav.depart.honoraryMember") }}</el-dropdown-item>
+                        </el-dropdown-menu>
+                      </template>
+                    </el-dropdown>
+                  </el-dropdown-item>
+                </el-dropdown-menu>
+              </template>
+            </el-dropdown>
+          </el-col>
+>>>>>>> 6b928b3 (✨ 添加荣誉部员导航到前端 dropdown 选项中)
+
 
             <!--校内社团介绍折叠面板-->
             <!--  <el-col :span="6">-->
