@@ -17,9 +17,13 @@
             <el-col :span="2.5">
               <div>
                 <el-button plain link class="el-dropdown-link" id="home-page-button" @click="switchLanguage()">
-                  <el-icon :size = "20"><Switch /></el-icon>
-                </el-button>
-              </div>
+                  <el-icon :size = "20">
+                    <!-- <Switch />   Element Plus 提供的图标库，基于 SVG 实现 -->
+                    <!-- 设置中英互译按钮图片 -->
+                  <img src="/src/assets/translation.png" alt="Switch Language" style="width: 20px; height: 20px;"/>
+                </el-icon>
+              </el-button>
+                </div>
             </el-col>
 
             <!--主页按钮-->
@@ -102,8 +106,8 @@
             <!--  </el-col>-->
             
             <!-- 部门折叠面板 -->
-              <el-col :span="4">
-            <el-dropdown>
+            <el-col :span="4">
+            <el-dropdown >
               <span class="el-dropdown-link">
                 {{ $t("nav.department") }}
                 <el-icon class="el-icon--right">
@@ -111,10 +115,10 @@
                 </el-icon>
               </span>
               <template #dropdown>
-                <el-dropdown-menu>
+                <el-dropdown-menu >
                   <!-- 2024-2025 -->
                   <el-dropdown-item>
-                    <el-dropdown trigger="hover" placement="right-start">
+                    <el-dropdown trigger="hover" placement="right-start"> 
                       <span class="el-dropdown-link">
                         2024-2025
                         <el-icon class="el-icon--right">
@@ -272,10 +276,11 @@
 <script setup>
 import {getAssetsFile} from "../utils/getAssetsFile";
 import {ArrowDown} from '@element-plus/icons-vue';
-import {Switch} from '@element-plus/icons-vue';
+// import {Switch} from '@element-plus/icons-vue';  使用自定义图片
 import {useRouter} from "vue-router"
 
 const router = useRouter();
+
 
 
 // 清除按钮点击后的状态，使其恢复到未点击状态。
@@ -299,13 +304,13 @@ function openMobilePage() {
   // Fixes dual-screen position                            Most browsers       Firefox
   const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left
   const dualScreenTop = window.screenTop !== undefined ? window.screenTop : screen.top
-
+  
   const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width
   const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height
-
+  
   const w = 400
   const h = 600
-
+  
   const left = ((width / 2) - (w / 2)) + dualScreenLeft
   const top = ((height / 2) - (h / 2)) + dualScreenTop
   const newWindow = window.open("../#/mobile/?force=mobile", "UCSD CSSA移动端网站", 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbar=no, resizable=yes, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left)
@@ -326,6 +331,8 @@ export default {
     }
   }
 }
+
+
 </script>
 
 <style scoped lang="less">
@@ -364,4 +371,4 @@ export default {
   .el-icon--right {
     margin-left: -0.15vw;
   }
-</style>
+  </style>
