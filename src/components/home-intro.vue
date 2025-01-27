@@ -14,7 +14,7 @@
     <el-aside width="26.174vw">
       <el-row justify="center">
         <!--这里用img不卡，原来使用el-image会导致页面子元素过多，因此会卡顿。-->
-        <img class="group-photo" :src="getAssetsFile('全体合照.jpeg')" fit="cover"/>
+        <img class="group-photo" :src="getAssetsFile('全体合照.jpeg')" style="width: 50vw; height: 35vw; object-fit: contain;"/>
         <!--视频播放键-->
         <el-button class="video" color="#a0342c" bg id="videoButton" :icon="CaretRight" circle
                    @click="dialogVisible=true; clearButtonState('videoButton')"/>
@@ -121,10 +121,8 @@ export default {
   }
 
   .group-photo {
-    width: 26.174vw;
-    height: 36.784vw;
-    margin-bottom: 3vw;
-    object-fit: cover;
+    // margin-bottom: 3vw;
+    object-fit: contain;
   }
 
   .video {

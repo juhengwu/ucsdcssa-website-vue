@@ -97,10 +97,11 @@
 
         <el-col :span="5">   
         <div class="iconsss" />  
-          <el-row justify="center" class="follow">Contact US</el-row>
-          <el-row justify="center" style="color: white">ucsdcssa1985@gmail.com</el-row>
-          <el-row justify="center">
-            <form action="https://formsubmit.co/jic034@ucsd.edu" method="POST">
+        <el-row justify="center" class="follow">Contact us</el-row>
+        <el-row justify="center" class="contact-email">ucsdcssa1985@gmail.com</el-row>
+        <el-row justify="center">
+            <!-- <form action="https://formsubmit.co/jic034@ucsd.edu" method="POST"> -->
+            <form action="mailto:foo@jic034@ucsd.edu" method="POST">
             <!-- FIXME: formsubmit doesn't work aka. no contact email sent at all. -->
               <div class="form-group" >
                 <div class="form-row" >
@@ -108,14 +109,14 @@
                     <input type="text" name="name" class="form-control rounded-input" placeholder="Your Full Name" required>
                   </div> -->
                   <div class="col">
-                    <input type="email" name="email" class="form-control rounded-input" placeholder="Your Email Address" required>
+                    <input type="email" name="email" class="form-control rounded-input" placeholder="Your Email Address" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;">
                   </div>
                 </div>
               </div>
               <!-- <div class="form-group">
                 <textarea placeholder="Your Message" class="form-control rounded-input" name="message" rows="10" required></textarea>
               </div> -->
-              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+              <button type="submit" class="btn btn-lg btn-dark btn-block rounded-button" style="border-radius: 15px; background-color: white; color: black; padding: 10px 20px; font-size: 16px; transition: background-color 0.3s, color 0.3s;">Submit Form</button>
             </form>
           </el-row>
        
@@ -144,6 +145,39 @@ export default {
     height: 25vw;
     background-color: #313338;
     padding: 0;
+  }
+
+  .follow {
+  font-size: 1.5em; /* 增加字体大小 */
+  font-weight: bold; /* 增加字体粗细 */
+  margin-bottom: 10px; /* 添加下边距 */
+  color: #ffffff; /* 字体颜色 */
+  }
+
+  .contact-email {
+  font-size: 1.2em; /* 增加字体大小 */
+  color: #ffffff; /* 字体颜色 */
+  background-color: #444; /* 背景颜色 */
+  padding: 5px 10px; /* 添加内边距 */
+  border-radius: 5px; /* 添加圆角 */
+  }
+
+  .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  }
+
+  button:hover {
+  background-color: #f0f0f0; /* 悬停时的背景颜色 */
+  color: #000; /* 悬停时的文字颜色 */
+  }
+
+  button:active {
+    background-color: #000 !important; /* 点击时的背景颜色 */
+    color: #e0e0e0 !important; /* 点击时的文字颜色 */
   }
 
   .first_container {
