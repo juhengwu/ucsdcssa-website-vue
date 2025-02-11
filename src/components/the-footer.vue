@@ -93,7 +93,7 @@
         </el-col>
 
         
-
+        
 
         <el-col :span="5">   
         <div class="iconsss" />  
@@ -101,15 +101,15 @@
         <el-row justify="center" class="contact-email">ucsdcssa1985@gmail.com</el-row>
         <el-row justify="center">
             <!-- <form action="https://formsubmit.co/jic034@ucsd.edu" method="POST"> -->
-            <form action="mailto:foo@jic034@ucsd.edu" method="POST">
-            <!-- FIXME: formsubmit doesn't work aka. no contact email sent at all. -->
+            <form action="mailto:ucsdcssa1985@gmail.com" method="POST">
               <div class="form-group" >
                 <div class="form-row" >
                   <!-- <div class="col">
                     <input type="text" name="name" class="form-control rounded-input" placeholder="Your Full Name" required>
                   </div> -->
                   <div class="col">
-                    <input type="email" name="email" class="form-control rounded-input" placeholder="Your Email Address" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;">
+                    <textarea name="message" class="form-control rounded-input" placeholder="Your Message" required style="width: 120%; height: 100px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;"></textarea>
+                    <!-- <input type="email" name="email" class="form-control rounded-input" placeholder="Your Email Address" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;"> -->
                   </div>
                 </div>
               </div>
