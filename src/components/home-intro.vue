@@ -2,7 +2,7 @@
 
   <!--播放bilibili视频-->
   <el-dialog v-model="dialogVisible" title="CSSA宣传片" width="70%" destroy-on-close>
-    <iframe class="player" src="//player.bilibili.com/player.html?bvid=BV1Bi421y71D&page=1"
+    <iframe class="player" src="https://www.xiaohongshu.com/search_result/679d936a000000002a0027f1?xsec_token=ABQR1VJnE1bvo_GC_kKtJyhczXK-VBp2QoPuj9gvmCZYk=&xsec_source=pc_search"
             border="0" framespacing="0" allowfullscreen="true">
     </iframe>
   </el-dialog>
@@ -14,7 +14,7 @@
     <el-aside width="26.174vw">
       <el-row justify="center">
         <!--这里用img不卡，原来使用el-image会导致页面子元素过多，因此会卡顿。-->
-        <img class="group-photo" :src="getAssetsFile('全体合照.jpeg')" style="width: 50vw; height: 35vw; object-fit: contain;"/>
+        <img class="group-photo" :src="getAssetsFile('蛇年春晚.jpg')" style="width: 30vw; height: 35vw;"/>
         <!--视频播放键-->
         <el-button class="video" color="#a0342c" bg id="videoButton" :icon="CaretRight" circle
                    @click="dialogVisible=true; clearButtonState('videoButton')"/>
