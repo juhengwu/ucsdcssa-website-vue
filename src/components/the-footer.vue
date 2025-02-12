@@ -101,23 +101,18 @@
         <el-row justify="center" class="contact-email">ucsdcssa1985@gmail.com</el-row>
         <el-row justify="center">
             <!-- <form action="https://formsubmit.co/jic034@ucsd.edu" method="POST"> -->
-            <form action="mailto:ucsdcssa1985@gmail.com" method="POST">
-              <div class="form-group" >
-                <div class="form-row" >
-                  <!-- <div class="col">
-                    <input type="text" name="name" class="form-control rounded-input" placeholder="Your Full Name" required>
-                  </div> -->
-                  <div class="col">
-                    <textarea name="message" class="form-control rounded-input" placeholder="Your Message" required style="width: 120%; height: 100px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;"></textarea>
-                    <!-- <input type="email" name="email" class="form-control rounded-input" placeholder="Your Email Address" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;"> -->
+              <form id="contactForm" action="mailto:ucsdcssa1985@gmail.com">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <!-- 保留 name 属性（用于 FormData 的遍历），但在构造 URL 时我们会特殊处理，
+                          使得最终生成的 URL 只包含 body 参数中纯净的用户输入 -->
+                        <input type="text" name="message" id="messageInput" class="form-control rounded-input" placeholder="Your Message" required style="height: 100px;">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- <div class="form-group">
-                <textarea placeholder="Your Message" class="form-control rounded-input" name="message" rows="10" required></textarea>
-              </div> -->
-              <button type="submit" class="btn btn-lg btn-dark btn-block rounded-button" style="border-radius: 15px; background-color: white; color: black; padding: 10px 20px; font-size: 16px; transition: background-color 0.3s, color 0.3s;">Submit Form</button>
-            </form>
+                <button type="submit" class="btn btn-lg btn-dark btn-block rounded-button" style="border-radius: 15px; background-color: white; color: black; padding: 10px 20px; font-size: 16px; transition: background-color 0.3s, color 0.3s;">Submit Form</button>              </form>
+
           </el-row>
        
         </el-col>
@@ -132,13 +127,49 @@
 </template>
 
 <script setup>
-import {getAssetsFile} from "../utils/getAssetsFile";</script>
+import { onMounted } from 'vue'
+import { getAssetsFile } from "../utils/getAssetsFile"
+
+// 等待组件挂载完毕后再操作 DOM 元素
+// JS 阻止默认表单提交，构造 mailto 链接并跳转 for contact form
+onMounted(() => {
+  const form = document.getElementById('contactForm')
+  if (!form) return
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault() // 阻止默认表单提交
+
+    // 利用 FormData 获取表单数据
+    const data = new FormData(form)
+    let url = form.action + "?"
+    let params = []
+
+    // 遍历表单中的每个字段
+    for (let [name, value] of data) {
+      if (name === "message") {
+        // 只将用户输入内容传递给 body 参数
+        params.push("body=" + encodeURIComponent(value))
+      } else {
+        params.push(name + "=" + encodeURIComponent(value))
+      }
+    }
+    url += params.join("&")
+
+    // 输出构造好的 URL 方便调试
+    console.log("Constructed mailto URL:", url)
+
+    // 跳转到构造好的 mailto 链接，打开默认邮件客户端
+    window.location.href = url
+  })
+})
+</script>
 
 <script>
 export default {
   name: "TheFooter"
 }
 </script>
+
 
 <style scoped lang="less">
   .common-layout {
