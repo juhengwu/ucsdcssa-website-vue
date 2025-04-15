@@ -5,7 +5,7 @@ import {createI18n} from "vue-i18n"
 import {Lazyload} from "vant"
 import router from "./router/router"
 import axios from "axios"
-import {classified} from "./classified"
+//import {classified} from "./classified"
 import zh from "./locales/zh.json"
 import en from "./locales/en.json"
 
