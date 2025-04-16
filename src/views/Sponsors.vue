@@ -413,11 +413,249 @@
               </template>
             </el-popover>
           </el-col>
+</el-row>
 
+<!-- 2) New CSSA Card Partners Section (reuse same structure) -->
+<h1>CSSA Card Partners</h1>
 
+<!-- Row for CSSA Card Partners -->
+<el-row justify="center" :gutter="30" style="margin-bottom: 50px;">
+  <!-- Blue Pepper -->
+  <el-col :span="3" class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('blue-pepper.png')" class="icon sponsor"/>
+      </template>
+      <template #default>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+          Blue Pepper, 10% off (minimal 10 dollars)	
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
 
+  <!-- Tapioca Express -->
+  <el-col :span="3" class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('tapioca-express.png')" class="icon sponsor"/>
+      </template>
+      <template #default>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+          Tapioca Express, 10% off
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
+
+  <!-- Yogurt World -->
+  <el-col :span="3" class="icon-sponsor">
+        <el-popover placement="right">
+          <template #reference>
+            <el-image :src="getAssetsFile('yogurt-world.png')" class="sponsor-icon"/>
+          </template>
+          <template #default>
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+              Yogurt World, 10% off
+            </div>
+          </template>
+        </el-popover>
+      </el-col>
+
+  <!-- Taco Villa -->
+  <el-col :span="3" class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('taco-villa.png')" class="sponsor-icon"/>
+      </template>
+      <template #default>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+          Taco Villa, 10% off
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
+
+  <el-col :span="3" class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('chakaa.png')" class="sponsor-icon"/>
+      </template>
+      <template #default>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
+          Chakaa, 10% off
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
+
+  <el-col :span="3" class="icon-sponsor">
+        <el-popover placement="right">
+          <template #reference>
+            <el-image :src="getAssetsFile('spot-ktv.png')" class="sponsor-icon"/>
+          </template>
+          <template #default>
+            <div class="popover-text">
+              Spot KTV, 15% off (Cash Only)
+            </div>
+          </template>
+        </el-popover>
+      </el-col>
     </el-row>
-  </div>
+    
+<el-row justify="center" :gutter="30" style="margin-bottom: 50px;">
+  <el-col :span="3" :offset="0.5" class="icon-sponsor">
+        <el-popover placement="right">
+          <template #reference>
+            <el-image :src="getAssetsFile('youmi.png')" class="sponsor-icon"/>
+          </template>
+          <template #default>
+            <div class="popover-text">
+              Youmie, 10% off（Cash only）
+            </div>
+          </template>
+        </el-popover>
+      </el-col>
+  
+<el-col :span="3" class="icon-sponsor">
+  <el-popover placement="right">
+          <template #reference>
+            <el-image :src="getAssetsFile('du-entertainment.png')" class="sponsor-icon"/>
+          </template>
+          <template #default>
+            <div class="popover-text">
+              DU Entertainment, 15% off 
+            </div>
+          </template>
+        </el-popover>
+      </el-col>
+
+  <el-col :span="3" class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('encounter.png')" class="sponsor-icon"/>
+      </template>
+      <template #default>
+        <div class="popover-text">
+          encounter, 15% off (credit card), 20% off (cash)
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
+
+  <el-col :span="3" class="icon-sponsor">
+        <el-popover placement="right">
+          <template #reference>
+            <el-image :src="getAssetsFile('yin-tang.png')" class="sponsor-icon"/>
+          </template>
+          <template #default>
+            <div class="popover-text">
+              Yin Tang, 10% off （Cash only）
+            </div>
+          </template>
+        </el-popover>
+      </el-col>
+
+  <el-col :span="3" class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('Zhengxin.png')" class="sponsor-icon"/>
+      </template>
+      <template #default>
+        <div class="popover-text">
+          Zhengxin, 20% off cash, 10% off credit card
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
+
+  <el-col :span="3" class="icon-sponsor">
+        <el-popover placement="right">
+          <template #reference>
+            <el-image :src="getAssetsFile('bbking.png')" class="sponsor-icon"/>
+          </template>
+          <template #default>
+            <div class="popover-text">
+              BB King, 10% off CSSA card, 20% off officer
+            </div>
+          </template>
+        </el-popover>
+      </el-col>
+    </el-row>
+
+<el-row justify="center" :gutter="30" style="margin-bottom: 50px;">
+
+  <el-col :span="3" :offset="3" class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('wonderlan.png')" class="sponsor-icon" />
+      </template>
+      <template #default>
+        <div class="popover-text">
+          Wonderland Majiang, 20% off
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
+
+  <el-col :span="3" class="icon-sponsor">
+        <el-popover placement="right">
+          <template #reference>
+            <el-image :src="getAssetsFile('Calvin.png')" class="sponsor-icon" />
+          </template>
+          <template #default>
+            <div class="popover-text">
+              CALVIN'S KOREAN CHICKEN, 5% off
+            </div>
+          </template>
+        </el-popover>
+      </el-col>  
+      
+  <el-col :span="3"  class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('juewei.png')" class="sponsor-icon" />
+      </template>
+      <template #default>
+        <div class="popover-text">
+          Júewèi, 10% off
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
+
+  <el-col :span="3" class="icon-sponsor">
+        <el-popover placement="right">
+          <template #reference>
+            <el-image :src="getAssetsFile('xinjiang.png')" class="sponsor-icon" />
+          </template>
+          <template #default>
+            <div class="popover-text">
+              Xinjiang Barbeque, 10% off
+            </div>
+          </template>
+        </el-popover>
+      </el-col>
+    
+  <el-col :span="3" class="icon-sponsor">
+    <el-popover placement="right">
+      <template #reference>
+        <el-image :src="getAssetsFile('Hometown-taste.png')" class="sponsor-icon" />
+      </template>
+      <template #default>
+        <div class="popover-text">
+          Hometown Taste, 20% off
+        </div>
+      </template>
+    </el-popover>
+  </el-col>
+  
+  <!-- If you want them centered across the row, you can add empty columns -->
+  <el-col :span="3"></el-col>
+  <el-col :span="3"></el-col>
+  <el-col :span="3"></el-col>
+</el-row>
+</div>
 </template>
 
 <script>
