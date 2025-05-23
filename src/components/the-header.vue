@@ -289,12 +289,13 @@ function clearButtonState(id) {
   document.getElementById(id).blur();
 }
 
-function goToDepartment(departmentName) {
+function goToDepartment(departmentName, year) {
   router.push({
     name: 'Department',
     // params现在必须定义在地址里了 https://www.cnblogs.com/liao-yi/articles/17028269.html
     params: {
-      departmentName
+      departmentName,
+      year
     }
   })
 }
