@@ -5,7 +5,7 @@
     <van-tabbar route active-color="#C22A1E" placeholder>
       <van-tabbar-item replace to="/mobile/home" icon="home-o">主页</van-tabbar-item>
       <van-tabbar-item replace to="/mobile/classes" icon="friends-o">课友群</van-tabbar-item>
-      <!--<van-tabbar-item replace to="/mobile/card" icon="credit-pay">CSSA卡</van-tabbar-item>-->
+      <van-tabbar-item replace to="/mobile/card" icon="credit-pay">CSSA卡</van-tabbar-item>
     </van-tabbar>
     <!-- New Button -->
     <div class="button-container">
@@ -27,7 +27,7 @@ const route = useRoute();
 const titles = {
   "MobileHome": "主页",
   "MobileClasses": "课友群",
-  // "MobileCard": "CSSA卡",
+  "MobileCard": "CSSA卡",
 };
 let title = $ref(titles[route.name]);
 // 监听路由变化
