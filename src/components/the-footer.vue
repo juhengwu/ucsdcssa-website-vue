@@ -76,7 +76,7 @@
             <!--Copyright-->
             <el-col :span="21" class="btm_text">
               <el-row class="texta">
-                Copyright © 2023
+                Copyright © 2025
                 <span class="boldtext">&nbspUCSD CSSA&nbsp</span>
                 All rights reserved.
               </el-row>
@@ -84,7 +84,7 @@
               <el-row class="texta">
                 <!--网站备案信息-->
                 <el-link href="https://beian.miit.gov.cn/#/Integrated/index" :underline="false">
-                  苏ICP备2022038753号-1
+                  粤ICP备2025476644号-1
                 </el-link>
               </el-row>
             </el-col>
